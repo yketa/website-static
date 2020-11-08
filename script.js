@@ -1,4 +1,4 @@
-var sourceURL = 'https://raw.githubusercontent.com/yketa/website-static/master/';
+var sourceURL = 'https://raw.githubusercontent.com/yketa/website-static/main/';
 
 /* Show/hide */
 function showHide(el, cl) {
