@@ -1,0 +1,75 @@
+<!-- PHP/HTML document written from https://www.w3schools.com/howto/howto_make_a_website.asp. -->
+
+<html lang="en">
+
+<head>
+
+  <title>Yann-Edwin Keta</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <!-- Font Awesome (https://fontawesome.com/) -->
+  <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+
+  <!-- MathJax (https://www.mathjax.org/) -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+  <!-- BibTeX-js (https://github.com/pcooksey/bibtex-js) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+  <bibtex src="https://raw.githubusercontent.com/yketa/cv/master/src/publications.bib"></bibtex>
+
+  <!-- COMMON CONTENT -->
+  <script>
+    $(function(){
+      $(".side").load(sourceURL.concat("panes/side.html"));
+      $(".navbar").load(sourceURL.concat("panes/navbar.html"));
+      $(".footer").load(sourceURL.concat("panes/footer.html"));
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Display -->
+
+  <div class="header"></div>
+
+  <div class="row">
+    <div class="side"></div>
+    <div class="navmain">
+      <div class="navbar"></div>
+      <div class="main">
+
+<!-- ////////////////////////////// -->
+<!-- CURRENT PAGE CONTENT GOES HERE -->
+<!-- ////////////////////////////// -->
+
+<div class="about">
+  <p style="text-align: right; font-style: italic; font-weight: bold;">Physics aficionado, extreme music enthusiast, hobbyist programmer.</p><br><br>
+  <p>You can find on this website descriptions and resources related to my past and present <a title="Research" href="research.html">research projects</a> and a list of my <a title="Publications" href="publications.html">academic publications</a>.</p>
+  <br><hr><br>
+  <p>A big <b>thanks</b> to all those who make the fruit of their labour freely available to all on the internet, those who publish open access papers, those who develop free softwares, and those who share their knowledge, skills, and creativity on wikis and forums. A great part of my projects — both personal and academic — could not have been realised without you.</p>
+  <p>All contents on this website (with the notable exception of institutional logos) are free to copy and redistribute in any medium or format, as well as to remix, transform, and build upon for any purpose, as long as you give appropriate credit ; this includes the website itself — its source code is available on <a href="https://github.com/yketa/website-static" title="GitHub (yketa/website-static)"><i class="fab fa-github"></i>&nbsp;GitHub</a>.</p>
+</div>
+
+<!-- /////////////////////////// -->
+<!-- END OF CURRENT PAGE CONTENT -->
+<!-- /////////////////////////// -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" style="display: none;"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!-- PHP/HTML document written from https://www.w3schools.com/howto/howto_make_a_website.asp. -->
+
+<html lang="en">
+
+<head>
+
+  <title>Yann-Edwin Keta</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+  <!-- Font Awesome (https://fontawesome.com/) -->
+  <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+
+  <!-- MathJax (https://www.mathjax.org/) -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+  <!-- BibTeX-js (https://github.com/pcooksey/bibtex-js) -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+  <bibtex src="https://raw.githubusercontent.com/yketa/cv/master/src/publications.bib"></bibtex>
+
+  <!-- COMMON CONTENT -->
+  <script>
+    $(function(){
+      $(".side").load(sourceURL.concat("panes/side.html"));
+      $(".navbar").load(sourceURL.concat("panes/navbar.html"));
+      $(".footer").load(sourceURL.concat("panes/footer.html"));
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- BibTeX-js template -->
+
+  <div class="bibtex_template">
+    <li>
+      <p class="article">
+        <span class="author"></span>,
+        "<span class="title"></span>",
+        <span class="if journal">
+          <span class="journal"></span>
+          <b><span class="volume"></span></b>,
+          <span class="pages"></span>
+        </span>
+        (<span class="year"></span>)
+        <span class="if doi">[<a class="bibtexVar" href="https://doi.org/+DOI+" extra="doi">DOI:<span class="doi"></span></a>]</span>.
+        <span class="if arxiv"><a class="bibtexVar" href="https://arxiv.org/abs/+ARXIV+" extra="arxiv"><i class="fas fa-unlock"></i>&nbsp;arXiv:<span class="arxiv"></span></a></span>
+      </p>
+      <span class="if abstract">
+        <a href="#" onclick="showHide(this, 'abstract+BIBTEXKEY+')" class="bibtexVar" extra="BIBTEXKEY"><i class="fas fa-chevron-right"></i>&nbsp;Abstract</a>
+        <div class="abstract bibtexVar abstract+BIBTEXKEY+" onclick="abstract(this)" style="display: none;" extra="BIBTEXKEY">
+          <p class="abstract"><span class="abstract"></span></p>
+        </div>
+      </span>
+    </li>
+  </div>
+
+  <!-- BibTeX-js structure -->
+
+  <div class="bibtex_structure">
+    <div class="group year" extra="DES number">
+      <h2 class="title publicationYear"></h2>
+      <ul class="publications">
+        <div class="templates"></div>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Display -->
+
+  <div class="header"></div>
+
+  <div class="row">
+    <div class="side"></div>
+    <div class="navmain">
+      <div class="navbar"></div>
+      <div class="main">
+
+<!-- ////////////////////////////// -->
+<!-- CURRENT PAGE CONTENT GOES HERE -->
+<!-- ////////////////////////////// -->
+
+<!-- PhD -->
+
+<div class="research">
+  <div class="description">
+    <h3>PhD: Collective dynamics in simple active matter</h3>
+    <div class="supervisor">
+      <h4>Supervised by: <a href="https://coulomb.umontpellier.fr/perso/ludovic.berthier/">Ludovic Berthier</a> (Montpellier), <a href="http://www.damtp.cam.ac.uk/user/rlj22/">Robert L. Jack</a> (Cambridge) &nbsp;&bull;&nbsp; September 2020 - Current</h4>
+    </div>
+    <div class="location">
+      <h4>Laboratoire Charles Coulomb, UMR 5221 CNRS, Université de Montpellier</h4>
+      <h5>Montpellier, France <img class="flag" src="https://github.com/yketa/cv/raw/master/src/img/fr.png"/></h5>
+    </div>
+    <div class="section">
+      <a class ="sectionTitle" href="#" onclick="showHide(this, 'ressourcesPhD')"><i class="fas fa-chevron-down"></i>&nbsp;External ressources</a>
+      <ul class="content ressourcesPhD">
+        <li><a href="https://github.com/yketa/coll_dyn_activem"><i class="fab fa-github"></i>&nbsp;Code developed for the project</a> (mainly C/C++ [simulation] and <i class="fab fa-python"></i>&nbsp;Python [analysis]).</li>
+        <li><a href="https://yketa.github.io/PhD_Wiki"><i class="fab fa-github"></i>&nbsp;Wiki of the project</a>.
+      </ul>
+    </div>
+  </div>
+  <div class="logo">
+    <img class="logo" src="images/umontpellier.svg"/>
+  </div>
+</div>
+
+<hr><br>
+
+<!-- DAMTP/MSC 2019/2020 -->
+
+<div class="research">
+  <div class="description">
+    <h3>Active work in systems of self-propelled particles</h3>
+    <div class="supervisor">
+      <h4>Supervised by: <a href="http://www.damtp.cam.ac.uk/user/rlj22/">Robert L. Jack</a>, <a href="http://www.damtp.cam.ac.uk/people/mec22/">Michael E. Cates</a> (Cambridge), and <a href="">Frédéric van Wijland</a> (Paris) &nbsp;&bull;&nbsp; October 2019 - July 2020</h4>
+    </div>
+    <div class="location">
+      <h4>Department of Applied Mathematics and Theoretical Physics, University of Cambridge</h4>
+      <h5>Cambridge, United Kingdom <img class="flag" src="https://github.com/yketa/cv/raw/master/src/img/uk.png"/></h5>
+      <h4>Laboratoire Matière et Systèmes Complexes, UMR 7057 CNRS, Université de Paris</h4>
+      <h5>Paris, France <img class="flag" src="https://github.com/yketa/cv/raw/master/src/img/fr.png"/></h5>
+    </div>
+    <div class="section">
+      <a class ="sectionTitle" href="#" onclick="showHide(this, 'publicationsDAMTP2019')"><i class="fas fa-chevron-down"></i>&nbsp;Associated publication</a>
+      <div class="bibtex_display publicationsDAMTP2019" bibtexkey="DAMTP2020"></div>
+    </div>
+    <div class="section">
+      <a class ="sectionTitle" href="#" onclick="showHide(this, 'ressourcesDAMTP2019')"><i class="fas fa-chevron-down"></i>&nbsp;External ressources</a>
+      <ul class="content ressourcesDAMTP2019">
+        <li><a href="https://github.com/yketa/active_work"><i class="fab fa-github"></i>&nbsp;Code developed for the project</a> (mainly C/C++ [simulation] and <i class="fab fa-python"></i>&nbsp;Python [analysis]).</li>
+        <li><a href="https://yketa.github.io/DAMTP_MSC_2019_Wiki"><i class="fab fa-github"></i>&nbsp;Wiki of the project</a> with details on our models and methods, theoretical developments, various plots and movies.
+      </ul>
+    </div>
+  </div>
+  <div class="logo">
+    <img class="logo" src="images/cambridge.svg"/>
+    <br><br>
+    <img class="logo" src="images/uparis.svg"/>
+  </div>
+</div>
+
+<!-- /////////////////////////// -->
+<!-- END OF CURRENT PAGE CONTENT -->
+<!-- /////////////////////////// -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" style="display: none;"></div>
+
+</body>
+
+</html>
